@@ -60,27 +60,30 @@ edad1 = int(input("Escribe tu edad."))
 interes1 = str(input("Escribe tu interés."))
 hobbie1 = str(input("Escribe tu hobbie."))
 
-if opcion == "a" or "a.":
+if opcion == "a" or opcion == "a.":
 
     cliente1 = Futbolero(hincha1, nombre1, email1, edad1, interes1, hobbie1)
     cliente1.comprar()
     cliente1.preguntar()
     print(cliente1)
 
-elif opcion == "b" or "b.":
+elif opcion == "b" or opcion == "b.":
     
     cliente1 = Hockey(hincha1, nombre1, email1, edad1, interes1, hobbie1)
     cliente1.comprar()
     cliente1.preguntar()
+    print(cliente1)
 
-elif opcion == "c" or "c.":
+elif opcion == "c" or opcion == "c.":
     
     cliente1 = Basket(hincha1, nombre1, email1, edad1, interes1, hobbie1)
     cliente1.comprar()
     cliente1.preguntar()
+    print(cliente1)
 
 else: 
-    
+
     cliente1 = Otros(hincha1, nombre1, email1, edad1, interes1, hobbie1)
     cliente1.comprar()
     cliente1.preguntar()
+    print(cliente1)
